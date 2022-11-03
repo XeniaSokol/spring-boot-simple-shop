@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>  -->
+    <title>About us</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+
+</head>
+<body>
+    <div th:insert="blocks/header :: header"></div>
+    <div class="row">
+    <div th:insert="blocks/bodyleft :: bodyleft"></div>
+    <div class="sidebar">
+        <div class="inner-sidebar">
+            <div class="inner-sidebar-title"> <h1 class="display-4 fw-normal">About Babyshop</h1>
+                <p class="lead fw-normal">Babyshop was founded in 2006 by Linn and Marcus Tagesson with a vision of building the best online store in the Nordics for children's clothing. Our goal is to inspire our customers by offering an exclusive shopping experience and excellent customer service with the best mixture of well-known and high-quality brands. Our product assortment is comprised of baby and children's clothes, shoes, toys, strollers, car seats, maternity clothes, accessories and much more for ages 0-10.<br><br>
+                    You can find Babyshop online, on your mobile or in our flagship store in Sturegallerian Stockholm.<br>
+                    For who we are and our individual contact information, please visit the Contact Us page.<br>
+                    Business Code: 556699-1542<br><br>
+                    Babyshop CVR-nr: 33503490
+                </p>
+                <a class="btn btn-outline-secondary" href="#">Перейти к товарам</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
